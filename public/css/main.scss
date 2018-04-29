@@ -1,0 +1,114 @@
+html {
+
+}
+
+body {
+  background-color: #1b1e21;
+}
+
+.add-new-item {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.bg-custom-dark {
+  background-color: #343a40 !important
+}
+
+.bg-custom-dark:hover {
+  background-color: #90a8b7 !important
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.cx-input {
+  background: #1b1e21;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  color: #dedede;
+  font-size: 25px;
+  border: 1px solid #444444;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+.index-logo {
+font-size: 4rem;
+}
+
+.share-link-wrapper {
+  border-radius: 10px;
+  background: #8c8c8c;
+  color: black;
+  padding: 10px;
+
+}
+
+.btn-checklist {
+
+}
+
+
+.share-link-wrapper pre {
+  padding: 0;
+  margin: 0;
+}
+
+.task-done {
+  color: #495258 !important;
+}
+
+h1, h2, h3, h4, h5, h6, a, p, span, input {
+  font-family: 'Assistant', sans-serif;
+  color: #FFFFFF;
+  margin:0;
+  padding: 0;
+}
+
+.checklist-wrapper {
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.checkbox-wrapper {
+  padding: 10px;
+}
+
+.checklist-wrapper h4 {
+  color: #dedede;
+  padding: 0;
+  margin:0;
+}
+
+textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {
+  border-color: rgba(0, 33, 156, 0);
+  box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 8px rgb(201, 0, 35);
+  outline: 0 none;
+}
+
+.checkbox-item-wrapper {
+  padding: 10px;
+
+}
+
+.checklist-hover {
+  background-color: none;
+  transition-duration: 550ms;
+}
+
+.checklist-hover:hover {
+  background-color: #2f2f2f;
+}
+
+.checkbox-item-wrapper h3 {
+  padding: 0;
+  margin: 0;
+}
+
+.bottom-separator {
+  border-bottom: 1px solid #ededed;
+}

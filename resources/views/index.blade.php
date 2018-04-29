@@ -46,6 +46,7 @@
                                 <s><h4 class='align-self-center task-done'>{{$item->Checklist_Item}}</h4></s>
                             </div>
                         </div>
+
                     @endif
 
 

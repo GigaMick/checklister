@@ -1,5 +1,5 @@
 html {
-
+  height: 100% !important;
 }
 
 .card-header {
@@ -18,6 +18,9 @@ input {
 
 body {
   background-color: #1b1e21;
+  padding-bottom: 100px;
+  position: relative;
+  min-height: 100% !important;
 }
 
 .add-new-item {
@@ -34,6 +37,15 @@ body {
   color: white;
   font-size: 1rem;
   font-weight: bold;
+}
+
+.btn-signup {
+  background: white;
+  color: black;
+  padding: 10px;
+  font-size: 1.5em;
+  font-weight: bold;
+  border-radius: 90px;
 }
 
 .bg-custom-dark {
@@ -135,4 +147,17 @@ textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {
 
 .bottom-separator {
   border-bottom: 1px solid #ededed;
+}
+
+.footer {
+  border-top: 1px solid #8c8c8c;
+  background: #272c31;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer a {
+  color: #7a7a7a;
 }

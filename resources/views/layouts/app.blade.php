@@ -27,7 +27,7 @@
 
 
         <!-- Scripts -->
-        <script src="{{ asset('js/app.js') }}" defer></script>
+        <script src="{{ secure_asset('js/app.js') }}" defer></script>
 
         <!-- Fonts -->
         <link rel="dns-prefetch" href="https://fonts.gstatic.com">
@@ -45,7 +45,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
                 crossorigin="anonymous"></script>
 
-        <link href="{{ asset('css/main.css?r=') }}{{$random}}" rel="stylesheet">
+        <link href="{{ secure_asset('css/main.css?r=') }}{{$random}}" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Assistant:200" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
               crossorigin="anonymous">

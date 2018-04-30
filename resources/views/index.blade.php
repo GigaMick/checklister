@@ -10,7 +10,7 @@
         </div>
     </div>
 
-    <div class='row mt-4'>
+    <div class='row mt-3'>
         <div class='col-10 offset-1 col-sm-6 offset-sm-3 text-center'>
             <p class='py-2 d-block mx-auto'>The checklist below is being used collaboratively by everyone who visits the site</p>
             @foreach ($checklist_item as $item)

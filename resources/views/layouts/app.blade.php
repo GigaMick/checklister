@@ -7,12 +7,15 @@
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-53468797-20"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+
             gtag('js', new Date());
 
             gtag('config', 'UA-53468797-20');
         </script>
-
 
 
         <meta charset="utf-8">
@@ -70,6 +73,25 @@
               crossorigin="anonymous">
     </head>
     <body>
+
+        <?php
+        if (isset($_GET{'ref'}) && $_GET{'ref'} == "producthunt") {
+        ?>
+        <div class='ph-banner'>
+            <div class='container py-1'>
+                <div class='row'>
+                    <div class='col-12 text-center'>
+
+                        <h4>Welcome fellow Hunter. Go forth and CheckList!</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <script>
+                gtag("event", "click", {"event_category": "PH-Visitor"});
+            </script>
+        <?php } ?>
+
         <nav class="navbar navbar-dark bg-dark">
             @guest
                 <a class="navbar-brand" href="/">CheckLister</a>

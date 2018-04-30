@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
+
+<div class='container'>
     <div class='row'>
         <div class='col-12 d-flex flex-column text-center'>
             <h1 class='pt-4 index-logo d-block mx-auto align-self-start'>CheckLister</h1>

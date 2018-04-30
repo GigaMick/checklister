@@ -23,7 +23,26 @@
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+        <title>{{ config('app.name', 'CheckLister') }}</title>
+
+        <!-- COMMON TAGS -->
+
+        <!-- Search Engine -->
+        <meta name="description" content="Create simple, beautiful checklists and then use them on your own, or share and use collaboratively">
+        <!-- Schema.org for Google -->
+        <meta itemprop="name" content="CheckLister">
+        <meta itemprop="description" content="Create simple, beautiful checklists and then use them on your own, or share and use collaboratively">
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="CheckLister">
+        <meta name="twitter:description" content="Create simple, beautiful checklists and then use them on your own, or share and use collaboratively">
+        <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+        <meta name="og:title" content="CheckLister">
+        <meta name="og:description" content="Create simple, beautiful checklists and then use them on your own, or share and use collaboratively">
+        <meta name="og:url" content="https://checklister.xyz">
+        <meta name="og:site_name" content="Checklister">
+        <meta name="og:locale" content="en_GB">
+        <meta name="og:type" content="website">
 
 
         <!-- Scripts -->

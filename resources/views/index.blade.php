@@ -58,7 +58,8 @@
 
     <div class='row'>
         <div class='col-12 col-sm-6 offset-sm-3 mt-5'>
-            <a href='/register' class='btn btn-dark btn-block'>Sign Up - It's Free</a>
+            <a href='/register' class='btn btn-dark btn-block' onclick='gtag("event", "click",
+                        {"event_category":"homepage-signup-button"});'>Sign Up - It's Free</a>
         </div>
     </div>
 

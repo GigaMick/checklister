@@ -22,12 +22,12 @@
                                 <form method='post' action='/update_checklist_item'>
                                     {{csrf_field()}}
                                     <input type='hidden' name='item_id' value='{{$item->id}}'>
-                                    <button type='submit' class='btn rounded-circle'><i class="fas fa-times"></i></button>
+                                    <button type='submit' class='btn rounded-circle' onclick='gtag("event", "click", {"event_category":"homepage-mark-complete"});'><i class="fas fa-times"></i></button>
                                 </form>
                             @elseif ($item->state == 1)
                                 <form method='post' action='/update_checklist_item_undone'>
                                     {{csrf_field()}}
-                                    <input type='hidden' name='item_id' value='{{$item->id}}'>
+                                    <input type='hidden' name='item_id' value='{{$item->id}}' onclick='gtag("event", "click", {"event_category":"homepage-mark-incomplete"});'>
                                     <button type='submit' class='btn rounded-circle'><i class="far fa-check task-done"></i></button>
                                 </form>
                             @endif

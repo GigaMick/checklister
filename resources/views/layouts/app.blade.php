@@ -131,7 +131,7 @@
 
     <footer class="footer">
         <div class='container'>
-            <span class="text-muted">This product is part of the <a href='http://songbox.rocks' onclick='gtag("event", "click",
+            <span class="text-muted">This product is part of the <a href='http://songbox.rocks' target='_blank' onclick='gtag("event", "click",
                         {"event_category":"footer-songbox-link"});'>SongBox</a> family</span>
         </div>
     </footer>

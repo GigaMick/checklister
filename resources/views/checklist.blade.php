@@ -10,7 +10,7 @@
                     <div class='input-new-item collapse show' id="collapseExample">
                         <form class='' action='/add-new-item' method='post'>
                             {{csrf_field()}}
-                            <input class='cx-input' name='item' placeholder='Add a new checklist item' autofocus>
+                            <input class='cx-input' name='item' placeholder='Add a new checklist item' autofocus onclick='gtag("event", "click",{"event_category":"add-new-item-input"});'>
                             <input type='hidden' name='checklist_id' value='{{$id}}'>
 
                         </form>
@@ -30,13 +30,15 @@
                                     <form method='post' action='/update_checklist_item'>
                                         {{csrf_field()}}
                                         <input type='hidden' name='item_id' value='{{$item->id}}'>
-                                        <button type='submit' class='btn rounded-circle'><i class="fas fa-times"></i></button>
+                                        <button type='submit' class='btn rounded-circle' onclick='gtag("event", "click",
+                        {"event_category":"marked-item-complete"});'><i class="fas fa-times"></i></button>
                                     </form>
                                 @elseif ($item->state == 1)
                                     <form method='post' action='/update_checklist_item_undone'>
                                         {{csrf_field()}}
                                         <input type='hidden' name='item_id' value='{{$item->id}}'>
-                                        <button type='submit' class='btn rounded-circle '><i class="far fa-check task-done"></i></button>
+                                        <button type='submit' class='btn rounded-circle ' onclick='gtag("event", "click",
+                        {"event_category":"marked-item-incomplete"});'><i class="far fa-check task-done"></i></button>
                                     </form>
                                 @endif
                             </div>

@@ -15,7 +15,8 @@
                 <div class='input-new-item collapse show' id="collapseExample">
                     <form class='' action='/add-new-checklist' method='post'>
                         {{csrf_field()}}
-                        <input class='cx-input' name='item' placeholder='Create new checklist'>
+                        <input class='cx-input' name='item' placeholder='Create new checklist' onclick='gtag("event", "click",
+                        {"event_category":"create-checklist"});'>
                     </form>
                 </div>
             {{--@endif--}}
@@ -30,7 +31,8 @@
                     @if ($item->state == 0)
 
                         <div class='col-xs-12 col-sm-12 d-flex align-items-center'>
-                            <a class='d-block w-100' href='/checklist/{{$item->id}}'>
+                            <a class='d-block w-100' href='/checklist/{{$item->id}}' onclick='gtag("event", "click",
+                        {"event_category":"select-checklist"});'>
                                 <div class='checkbox-item-wrapper d-flex align-items-center'>
                                     <h4 class='align-self-center'>{{$item->Checklist_Name}}</h4>
                                 </div>
@@ -38,7 +40,8 @@
                         </div>
 
                     @elseif ($item->state == 1)
-                        <div class='col-xs-10 col-sm-10 d-flex align-items-center'>
+                        <div class='col-xs-10 col-sm-10 d-flex align-items-center' onclick='gtag("event", "click",
+                        {"event_category":"select-checklist"});'>
                             <div class='checkbox-item-wrapper d-flex align-items-center'>
                                 <s><h4 class='align-self-center task-done'>{{$item->Checklist_Name}}</h4></s>
                             </div>

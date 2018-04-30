@@ -10,7 +10,7 @@
                     <div class='input-new-item collapse show' id="collapseExample">
                         <form class='' action='/add-new-item' method='post'>
                             {{csrf_field()}}
-                            <input class='cx-input' name='item' placeholder='Add a new checklist item'>
+                            <input class='cx-input' name='item' placeholder='Add a new checklist item' autofocus>
                             <input type='hidden' name='checklist_id' value='{{$id}}'>
 
                         </form>

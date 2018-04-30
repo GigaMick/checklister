@@ -46,6 +46,7 @@
         ],
         "post-install-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postInstall",
+            "@php artisan optimize",
             "@php artisan migrate"
         ],
         "post-autoload-dump": [

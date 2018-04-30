@@ -87,9 +87,9 @@
                 </div>
             </div>
         </div>
-            <script>
-                gtag("event", "click", {"event_category": "PH-Visitor"});
-            </script>
+        <script>
+            gtag("event", "click", {"event_category": "PH-Visitor"});
+        </script>
         <?php } ?>
 
         <nav class="navbar navbar-dark bg-dark">
@@ -126,5 +126,13 @@
 
         </div>
 
+
     </body>
+
+    <footer class="footer">
+        <div class='container'>
+            <span class="text-muted">This product is part of the <a href='https://songbox.rocks' onclick='gtag("event", "click",
+                        {"event_category":"footer-songbox-link"});'>SongBox</a> family</span>
+        </div>
+    </footer>
 </html>
